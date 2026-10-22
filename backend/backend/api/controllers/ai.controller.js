@@ -9,7 +9,7 @@ export const askAI = async (req, res) => {
     const { message } = req.body;
 
     const completion = await groq.chat.completions.create({
-      model: "openai/gpt-oss-120b",
+      model: "llama-3.3-70b-versatile",
       messages: [
         {
           role: "user",
