@@ -23,7 +23,7 @@ const AIChat = () => {
 
     try {
       const res = await axios.post(
-        "https://omni-chats-backend.onrender.com/api/ai/ask",
+        "https://omni-chat-nzpm.onrender.com/api/ai/ask",
         {
           message: currentMessage,
         }
