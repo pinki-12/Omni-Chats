@@ -7,7 +7,6 @@ export const askAI = async (req, res) => {
     });
 
     const { message } = req.body;
-
     const completion = await groq.chat.completions.create({
       model: "openai/gpt-oss-120b",
       messages: [
@@ -17,7 +16,6 @@ export const askAI = async (req, res) => {
         },
       ],
     });
-
     res.status(200).json({
       reply: completion.choices[0].message.content,
     });
