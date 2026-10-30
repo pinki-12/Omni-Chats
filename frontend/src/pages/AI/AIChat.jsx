@@ -33,7 +33,6 @@ const AIChat = () => {
         sender: "ai",
         text: res.data.reply,
       };
-
       setMessages((prev) => [...prev, aiMessage]);
     } catch (error) {
       console.log(error);
